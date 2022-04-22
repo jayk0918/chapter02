@@ -54,7 +54,6 @@ public class Song {
 	public void setTrack(int tn) {
 		track = tn;
 	}
-	
 	public int getTrack() {
 		return track;
 	}

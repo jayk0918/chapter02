@@ -14,8 +14,12 @@ public class Goods {
 		name = n;					// return 값이 무엇인지를 밝혀주어야 함 => 여기서는 없으니 (void)
 	}
 	
-	public void setPrice(int p) {	// 변수명 + (값) => (값)은 저장하고자 하는 값을 써줌
-		price = p;
+	public void setPrice(int price) {	// 변수명 + (값) => (값)은 저장하고자 하는 값을 써줌
+		if(price<0){	// 조건문 사용 가능
+			this.price = 0;
+		}else {
+			this.price = price;
+		}
 	}
 	
 	public String getName() {	// setName에서 설정한 name을 getName을 통해서 구현해야 함
