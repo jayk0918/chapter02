@@ -31,10 +31,10 @@ public class Tv {
 	// 메소드 일반
 	
 	public void power(boolean on) {
-		if(on = true) {
-			power = true;
+		if(on == true) {
+			this.power = true;
 		}else {
-			power = false;
+			this.power = false;
 		}
 
 	}
@@ -48,7 +48,7 @@ public class Tv {
 	}
 	
 	public void channel(boolean up) {
-		if(up = true) {
+		if(up == true) {
 			this.channel += 1;
 		}else {
 			this.channel -= 1;
@@ -56,10 +56,10 @@ public class Tv {
 	}
 	
 	public void volume(int volume) {
-		if(volume>=255) {
-			volume = 255;
+		if(volume>=100) {
+			this.volume = 100;
 		}else if(volume<=0) {
-			volume = 0;
+			this.volume = 0;
 		}
 	}
 	
