@@ -25,7 +25,7 @@ public class Triangle extends Rectangle{
 				+ super.getClass() + ", hashCode()=" + hashCode() + "]";
 	}
 	public void draw() {
-		System.out.println("면색: " + super.fillcolor + ", 선색: " + super.linecolor + ", 가로 : " + super.width + ", 세로: " + super.height + "삼각형을 그렸습니다.");
+		System.out.println("면색: " + super.fillcolor + ", 선색: " + super.linecolor + ", 가로 : " + super.width + ", 세로: " + super.height + " 삼각형을 그렸습니다.");
 	}
 	
 	
