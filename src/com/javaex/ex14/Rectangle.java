@@ -2,6 +2,8 @@ package com.javaex.ex14;
 
 public class Rectangle {
 	
+	// 설계 : Rectangle을 기준으로 -> Triangle & Circle에 상속시키되 각자 다른 점은 거기서 세팅
+	
 	// 필드
 	protected String fillcolor;
 	protected String linecolor;
