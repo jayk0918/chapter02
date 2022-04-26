@@ -2,46 +2,51 @@ package com.javaex.ex14;
 
 public class Rectangle {
 	
-	// 설계 : Rectangle을 기준으로 -> Triangle & Circle에 상속시키되 각자 다른 점은 거기서 세팅
-	
 	// 필드
-	protected String fillcolor;
-	protected String linecolor;
-	protected int width;
-	protected int height;
+	private String fillColor;
+	private String lineColor;
+	private int width;
+	private int height;
 	
 	// 생성자
 	Rectangle(){}
-	Rectangle(String fillcolor, String linecolor, int width, int height){
-		this.fillcolor = fillcolor;
-		this.linecolor = linecolor;
+	
+	Rectangle(String fillColor, String lineColor, int width, int height){
+		this.fillColor = fillColor;
+		this.lineColor = lineColor;
 		this.width = width;
 		this.height = height;
 	}
 	
-	
 	// 메소드 gs
-	public String getFillcolor() {
-		return fillcolor;
+	public String getFillColor() {
+		return fillColor;
 	}
-	public void setFillcolor(String fillcolor) {
-		this.fillcolor = fillcolor;
+
+	public void setFillColor(String fillColor) {
+		this.fillColor = fillColor;
 	}
-	public String getLinecolor() {
-		return linecolor;
+
+	public String getLineColor() {
+		return lineColor;
 	}
-	public void setLinecolor(String linecolor) {
-		this.linecolor = linecolor;
+
+	public void setLineColor(String lineColor) {
+		this.lineColor = lineColor;
 	}
+
 	public int getWidth() {
 		return width;
 	}
+
 	public void setWidth(int width) {
 		this.width = width;
 	}
+
 	public int getHeight() {
 		return height;
 	}
+
 	public void setHeight(int height) {
 		this.height = height;
 	}
@@ -50,13 +55,14 @@ public class Rectangle {
 	// 메소드 일반
 	@Override
 	public String toString() {
-		return "Rectangle [fillcolor=" + fillcolor + ", linecolor=" + linecolor + ", width=" + width + ", height="
+		return "Rectangle [fillColor=" + fillColor + ", lineColor=" + lineColor + ", width=" + width + ", height="
 				+ height + "]";
 	}
 	
 	public void draw() {
-		System.out.println("면색: " + fillcolor + ", 선색: " + linecolor + ", 가로 : " + width + ", 세로: " + height + " 사각형을 그렸습니다.");
+		System.out.println("면색:" + fillColor + ", 선색:" + lineColor + ", 가로:" + width + ", 세로:" + height + " 사각형을 그렸습니다.");
 	}
+	
 	
 	
 }
