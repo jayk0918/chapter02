@@ -1,10 +1,5 @@
 package com.javaex.ex17;
 
-import com.javaex.ex16.Circle;
-import com.javaex.ex16.Rectangle;
-import com.javaex.ex16.Shape;
-import com.javaex.ex16.Triangle;
-
 public class ShapeApp {
 
 	public static void main(String[] args) {
